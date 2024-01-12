@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link rel="icon" href="LOGOS\3.png">
+    <!-- <link rel="js" href="slide.js"> -->
+</head>
+<body>
+    <header class="header_bar">
+       <!-- <div class="content"> <img src="LOGOS\2.png" alt="" srcset="" class="image_style"> -->
+
+    <input type="text" name="" id="" class="search_here" placeholder="Search Your Own Brands......"><span><a href="signin.html">Login</a><a href="contactus.html">Contact us</a>
+    <a href="dynamic.html">Cart</a><a href="profile.html">Profile</a>
+    </span></div>
+    
+</header>
+    <center> 
+    <div class="slider">
+       <img id="img-1" src="https://t4.ftcdn.net/jpg/05/51/69/95/360_F_551699573_1wjaMGnizF5QeorJJIgw5eRtmq5nQnzz.jpg" alt="Image 1"/>
+        <img id="img-2" src="https://imgeng.jagran.com/images/2023/sep/best%2015%20inch%20laptops%20in%20India1695872319038.jpg" alt="Image 2"/>
+        <!-- <img id="img-3" src="IMAGES\Men Clothes\5.png" alt="Image 3"/> -->
+       
+      </div>
+      </center>
+      <div class="navigation-button">
+        <span class="dot active" onclick="changeSlide(0)"></span>
+        <span class="dot" onclick="changeSlide(1)"></span>
+        <!-- <span class="dot" onclick="changeSlide(2)"></span> -->
+      </div>
+    <div class="ctagories">
+        <h1>CHOOSE YOUR CATEGORY</h1>
+        <ul>
+            <li><a href="Furniture.html"><img src="https://img.freepik.com/free-vector/golden-furniture-logo_23-2148477502.jpg?size=338&ext=jpg&ga=GA1.1.1412446893.1704931200&semt=ais" alt="" srcset=""></a></li>
+            <li><a href="accessories.html"><img src="https://c8.alamy.com/comp/2AGRX2E/vector-logo-for-electronics-store-black-decorative-signboard-with-illustration-of-set-modern-web-electronic-products-sign-board-with-original-typefa-2AGRX2E.jpg" alt="" srcset=""></a></li>
+            <li><a href="men.html"><img src="https://images.bewakoof.com/t640/men-s-brown-customizable-oversized-t-shirt-592596-1685445534-1.jpg" alt="" srcset=""></a></li>
+            <li><a href="women.html"><img src="https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/21199884/2023/1/11/01150d25-5b75-4a63-8207-3d389de5947e1673432924582-Calvin-Klein-Jeans-Women-Tshirts-9371673432923945-1.jpg" alt="" srcset=""></a></li>
+            <li><a href="stationary.html"><img src="https://img.freepik.com/free-vector/stationery-store-logo-template_23-2149852417.jpg" alt="" srcset=""></a></li>
+            <li><a href="Laptop.html"><img src="https://bleuwire.com/wp-content/uploads/2019/03/laptop-accessories.jpg" alt="" srcset=""></a></li>
+        </ul>
+    </div>
+    <div class="about_us">
+    <h1>AboutUs</h1>
+    <div>
+        Absolutely, let's tailor the "About Us" section to better suit an e-commerce website like Web Vidata:
+
+---
+
+## Welcome to Web Vidata - Your Data-Driven Shopping Experience
+
+Discover a new era of online shopping at Web Vidata, where innovation meets convenience. Since [year], we have been on a mission to redefine the e-commerce landscape, leveraging the power of data to enhance your shopping journey.
+
+### Our Vision
+
+At Web Vidata, we envision a seamless and personalized shopping experience for every customer. Our goal is to curate a marketplace where data-driven insights meet your preferences, offering a tailored selection of products that resonate with your unique taste.
+
+### The Web Vidata Advantage
+
+What sets us apart is our commitment to leveraging data not just for our benefit but for yours. Our sophisticated algorithms analyze trends, user behavior, and preferences to ensure that our product offerings are not just products but solutions that enhance your lifestyle.
+
+### Curated Collections
+
+Explore our thoughtfully curated collections that go beyond the ordinary. From tech gadgets to fashion essentials, each product is handpicked to meet the standards of quality, innovation, and value that define the Web Vidata experience.
+
+### Secure and Seamless Transactions
+
+Your trust is our top priority. Our secure and user-friendly platform ensures that every transaction is not only seamless but also safeguarded by the latest in online security protocols. Shop with confidence, knowing that your data and privacy are in good hands.
+
+### Meet the Web Vidata Team
+
+Behind the scenes, a dedicated team of e-commerce enthusiasts and tech experts drives the Web Vidata experience. We are passionate about bringing you the best of the digital marketplace and are committed to continuously improving your online shopping journey.
+
+### Contact Us
+
+Have a question, suggestion, or just want to say hello? Reach out to our friendly customer support team. Your feedback is invaluable in helping us refine and enhance your experience with Web Vidata.
+
+### Connect With Us
+
+Stay updated on the latest arrivals, exclusive offers, and behind-the-scenes insights by connecting with us on social media. Join our growing community of savvy shoppers who trust Web Vidata for their online retail needs.
+
+Thank you for choosing Web Vidata - where data meets shopping, and every purchase tells a unique story.
+
+[Include engaging visuals, product images, or any other elements that showcase your e-commerce offerings.]
+
+---
+    </div>
+    </div>
+    <footer class="contect">
+
+    </footer>
+      <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider img');
+        const dots = document.querySelectorAll('.dot');
+    
+        function showSlide(index) {
+          slides.forEach((slide) => {
+            slide.style.display = 'none';
+          });
+    
+          dots.forEach((dot) => {
+            dot.classList.remove('active');
+          });
+    
+          slides[index].style.display = 'block';
+          dots[index].classList.add('active');
+        }
+    
+        function changeSlide(index) {
+          currentSlide = index;
+          showSlide(currentSlide);
+        }
+    
+        // Automatic slideshow
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }
+    
+        // Change slide every 3 seconds (adjust as needed)
+        setInterval(nextSlide, 3000);
+    
+        // Initial display
+        showSlide(currentSlide);
+      </script>
+    
+</body>
+</html>

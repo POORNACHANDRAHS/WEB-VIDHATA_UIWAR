@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #ddd;
+            padding: 1em;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section {
+            margin: 2em;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        form {
+            margin-top: 1em;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Profile Dashboard</h1>
+    </header>
+
+    <nav>
+        <a href="#personal-info">Personal Information</a>
+        <a href="#order-tracking">Order Tracking</a>
+        <a href="#preferences">Preferences</a>
+    </nav>
+
+    <section id="personal-info">
+        <h2>Personal Information</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>XXXXX</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>........@gmail.com</td>
+            </tr>
+            <!-- Add more personal information fields as needed -->
+        </table>
+    </section>
+
+    <section id="order-tracking">
+        <h2>Order Tracking</h2>
+        <table>
+            <!-- Add order tracking information here -->
+        </table>
+    </section>
+
+    <section id="preferences">
+        <h2>Preferences</h2>
+        <form>
+            <label for="theme">Select Theme:</label>
+            <select id="theme" name="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+
+            <button type="submit">Save Preferences</button>
+        </form>
+    </section>
+</body>
+</html>
